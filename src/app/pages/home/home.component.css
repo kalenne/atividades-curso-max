@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+button {
+    height: 3rem;
+    width: 5rem;
+    font-weight: bold;
+    border: 1px solid gray;
+    border-radius: 5%;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+    font: 400 14px 'Poppins',sans-serif;
+}
+
+button.sucess{
+    background-color: lightgreen;
+}
+
+button.warning {
+    background-color: rgb(247, 247, 131);
+}
+
+h3 {
+    font: 700 18px 'Poppins',sans-serif;
+}
