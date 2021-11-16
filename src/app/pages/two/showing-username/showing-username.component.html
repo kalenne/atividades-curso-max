@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="square">
+        <h3>Formulário de Usuário</h3> 
+        <label for="formGroupExampleInput">Informe um nome de usuário:</label>
+        <input type="text" class="form-control" [(ngModel)]="username" id="formGroupExampleInput" placeholder="Usuário"
+            maxlength="20">
+        <p>O nome de seu usuário é {{ getUserName() }} </p>
+        
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-danger" [disabled]="username ==''"
+                    (click)="onClickUsername()">Limpar</button>
+                <button type="button" class="btn btn-outline-primary" routerLink="../">Voltar</button>
+            </div>
+        </div> 
+    </div>
+</div>
